@@ -3384,8 +3384,8 @@ void loop()
     Debug.print(peripheral.advertisedServiceUuid());
     Debug.println();
 
-    // see if peripheral is a LED
-    if (peripheral.localName() == "Picture" || peripheral.localName() == "iPhone" ) {
+    // see if peripheral is a Picture
+    if (peripheral.localName() == "Picture") {
       // stop scanning
       BLE.stopScan();
 
